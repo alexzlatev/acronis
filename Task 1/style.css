@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2, h4, p {
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 80px 0 64px;
+    margin: 80px auto 80px auto;
+}
+
+.first-section {
+    flex: 1;
+    max-width: 410px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+.first-section .sync {
+    color: rgba(36, 49, 67, 0.6);
+}
+
+.first-section .title {
+    color: #00204D;
+    margin-top: 8px;
+    line-height: 32px;
+}
+
+.first-section .sub-title {
+    color: #9BC225;
+    margin-top: 8px;
+}
+
+.first-section .text {
+    margin-top: 24px;
+    line-height: 24px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 2;
+    justify-content: space-between;
+}
+
+.icon {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+.icon.first {
+    background-image: url('./assets/icons/0001_S_full_image_backup@2x.png');
+}
+
+.icon.second {
+    background-image: url('./assets/icons/0003_S_active_ransomware_protection@2x.png');
+}
+
+.icon.third {
+    background-image: url('./assets/icons/0071_S_survival_kit@2x.png');
+}
+
+.icon.fourth {
+    background-image: url('./assets/icons/0072_S_backup_cleanup_tool@2x.png');
+}
+
+.icon.fifth {
+    background-image: url('./assets/icons/0076_L_application_level_replication\ Copy@2x.png');
+}
+
+.icon.sixth {
+    background-image: url('./assets/icons/0083_L_acronis_instant_restore\ Copy@2x.png');
+}
+
+.icon.exclusive::after {
+    content: 'EXCLUSIVE';
+    bottom: -15px;
+    position: absolute;
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    background-color: #9BC225;
+    border-radius: 4px;
+    padding: 0px 8px;
+    line-height: 16px;
+    letter-spacing: 1px;
+}
+
+.article {
+    width: 50%;
+    height: fit-content;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 35px;
+    margin-bottom: 60px;
+}
+
+.article .title {
+    color: #00204D;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.article .text {
+    color: rgba(36, 49, 67, 0.9);
+    margin-top: 8px;
+}
+
+.third-section {
+    position: absolute;
+    left: 64px;
+    bottom: 0;
+    flex: 1;
+    margin-bottom: 60px;
+}
+
+.third-section .anchor {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #408BEA;
+    text-decoration: none;
+}
+
+.third-section .arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('./assets/icons/Union.png');
+    margin-left: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: column;
+        padding-left: 32px;
+        padding-right: 48px;
+    }
+
+    .first-section {
+        flex: 2;
+        max-width: unset;
+    }
+
+    .third-section {
+        position: unset;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .article {
+        width: 100%;
+        padding-right: 0;
+    }
+}
